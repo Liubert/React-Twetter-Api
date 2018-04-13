@@ -1,0 +1,58 @@
+h1 {
+    margin: 0; }
+.header-logo{
+    height:45px;
+    -webkit-animation:spin 4s linear infinite;
+    -moz-animation:spin 4s linear infinite;
+    animation:spin 4s linear infinite;
+}
+.page-center-layout{
+    height: 100vh;
+    min-height: 100%;
+    background: white;
+    text-align: center;
+    margin: 10%;
+}
+@-moz-keyframes spin { 100% { -moz-transform: rotate(360deg); } }
+@-webkit-keyframes spin { 100% { -webkit-transform: rotate(360deg); } }
+@keyframes spin { 100% { -webkit-transform: rotate(360deg); transform:rotate(360deg); } }
+.animYes{
+    width: calc(100% - 240px) !important;
+    transition: width 225ms cubic-bezier(0.4, 0, 0.6, 1) 0ms,margin 225ms cubic-bezier(0.4, 0, 0.6, 1) 0ms;
+    margin-left: 240px;
+}
+.animNo{
+    width: 100% !important;
+    transition: width 225ms cubic-bezier(0.4, 0, 0.6, 1) 0ms,margin 225ms cubic-bezier(0.4, 0, 0.6, 1) 0ms;
+    margin-left: 240px;
+}
+#page-preloader {
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    background: #fff;
+    z-index: 100500;
+}
+
+#page-preloader .spinner {
+    width: 64px;
+    height: 64px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    background: url('../public/images/preloader.gif') no-repeat 50% 50%;
+    margin: -32px 0 0 -32px;
+}
+.dashboard-page label,
+.dashboard-page input {
+    font-size: 16px !important;
+}
+.dashboard-page button {
+    font-size: 12px !important;
+}
+.SplitPane-right {
+    display: inline-block;
+    width: 65%;
+}
