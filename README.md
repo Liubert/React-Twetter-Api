@@ -1,6 +1,7 @@
 ﻿
-### Run the API Server https://vyach-timeline.herokuapp.com
+### You can see a demo - https://vyach-timeline.herokuapp.com
 
+### Run the API Server 
 In a terminal:
 
 ```bash
